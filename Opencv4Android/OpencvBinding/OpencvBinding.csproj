@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{D51E9471-C935-4024-B30D-6E2DBA3CF9E2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OpencvBinding</RootNamespace>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>True</AndroidUseLatestPlatformSdk>
+    <AssemblyName>OpencvBinding</AssemblyName>
+    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <ConsolePause>false</ConsolePause>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Additions\AboutAdditions.txt" />
+    <None Include="Jars\AboutJars.txt" />
+    <None Include="Jars\armeabi\libopencv_androidcamera.a" />
+    <None Include="Jars\armeabi\libopencv_calib3d.a" />
+    <None Include="Jars\armeabi\libopencv_contrib.a" />
+    <None Include="Jars\armeabi\libopencv_core.a" />
+    <None Include="Jars\armeabi\libopencv_features2d.a" />
+    <None Include="Jars\armeabi\libopencv_flann.a" />
+    <None Include="Jars\armeabi\libopencv_highgui.a" />
+    <None Include="Jars\armeabi\libopencv_imgproc.a" />
+    <None Include="Jars\armeabi\libopencv_legacy.a" />
+    <None Include="Jars\armeabi\libopencv_ml.a" />
+    <None Include="Jars\armeabi\libopencv_objdetect.a" />
+    <None Include="Jars\armeabi\libopencv_ocl.a" />
+    <None Include="Jars\armeabi\libopencv_photo.a" />
+    <None Include="Jars\armeabi\libopencv_stitching.a" />
+    <None Include="Jars\armeabi\libopencv_superres.a" />
+    <None Include="Jars\armeabi\libopencv_ts.a" />
+    <None Include="Jars\armeabi\libopencv_video.a" />
+    <None Include="Jars\armeabi\libopencv_videostab.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_androidcamera.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_calib3d.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_contrib.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_core.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_features2d.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_flann.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_highgui.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_imgproc.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_legacy.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_ml.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_objdetect.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_ocl.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_photo.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_stitching.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_superres.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_ts.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_video.a" />
+    <None Include="Jars\armeabi-v7a\libopencv_videostab.a" />
+    <None Include="Jars\mips\libopencv_androidcamera.a" />
+    <None Include="Jars\mips\libopencv_calib3d.a" />
+    <None Include="Jars\mips\libopencv_contrib.a" />
+    <None Include="Jars\mips\libopencv_core.a" />
+    <None Include="Jars\mips\libopencv_features2d.a" />
+    <None Include="Jars\mips\libopencv_flann.a" />
+    <None Include="Jars\mips\libopencv_highgui.a" />
+    <None Include="Jars\mips\libopencv_imgproc.a" />
+    <None Include="Jars\mips\libopencv_legacy.a" />
+    <None Include="Jars\mips\libopencv_ml.a" />
+    <None Include="Jars\mips\libopencv_objdetect.a" />
+    <None Include="Jars\mips\libopencv_ocl.a" />
+    <None Include="Jars\mips\libopencv_photo.a" />
+    <None Include="Jars\mips\libopencv_stitching.a" />
+    <None Include="Jars\mips\libopencv_superres.a" />
+    <None Include="Jars\mips\libopencv_ts.a" />
+    <None Include="Jars\mips\libopencv_video.a" />
+    <None Include="Jars\mips\libopencv_videostab.a" />
+    <None Include="Jars\x86\libopencv_androidcamera.a" />
+    <None Include="Jars\x86\libopencv_calib3d.a" />
+    <None Include="Jars\x86\libopencv_contrib.a" />
+    <None Include="Jars\x86\libopencv_core.a" />
+    <None Include="Jars\x86\libopencv_features2d.a" />
+    <None Include="Jars\x86\libopencv_flann.a" />
+    <None Include="Jars\x86\libopencv_highgui.a" />
+    <None Include="Jars\x86\libopencv_imgproc.a" />
+    <None Include="Jars\x86\libopencv_legacy.a" />
+    <None Include="Jars\x86\libopencv_ml.a" />
+    <None Include="Jars\x86\libopencv_objdetect.a" />
+    <None Include="Jars\x86\libopencv_ocl.a" />
+    <None Include="Jars\x86\libopencv_photo.a" />
+    <None Include="Jars\x86\libopencv_stitching.a" />
+    <None Include="Jars\x86\libopencv_superres.a" />
+    <None Include="Jars\x86\libopencv_ts.a" />
+    <None Include="Jars\x86\libopencv_video.a" />
+    <None Include="Jars\x86\libopencv_videostab.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
+    <TransformFile Include="Transforms\Metadata.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
+  <ItemGroup>
+    <EmbeddedJar Include="Jars\opencv library - 2.4.11.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libnative_camera_r2.2.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libnative_camera_r2.3.3.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libnative_camera_r3.0.1.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libnative_camera_r4.0.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libnative_camera_r4.0.3.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libnative_camera_r4.1.1.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libnative_camera_r4.2.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libnative_camera_r4.3.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libnative_camera_r4.4.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libopencv_info.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi\libopencv_java.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libnative_camera_r2.2.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libnative_camera_r2.3.3.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libnative_camera_r3.0.1.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libnative_camera_r4.0.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libnative_camera_r4.0.3.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libnative_camera_r4.1.1.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libnative_camera_r4.2.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libnative_camera_r4.3.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libnative_camera_r4.4.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libopencv_info.so" />
+    <EmbeddedNativeLibrary Include="Jars\armeabi-v7a\libopencv_java.so" />
+    <EmbeddedNativeLibrary Include="Jars\mips\libnative_camera_r4.0.3.so" />
+    <EmbeddedNativeLibrary Include="Jars\mips\libnative_camera_r4.1.1.so" />
+    <EmbeddedNativeLibrary Include="Jars\mips\libnative_camera_r4.2.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\mips\libnative_camera_r4.3.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\mips\libnative_camera_r4.4.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\mips\libopencv_info.so" />
+    <EmbeddedNativeLibrary Include="Jars\mips\libopencv_java.so" />
+    <EmbeddedNativeLibrary Include="Jars\x86\libnative_camera_r2.3.3.so" />
+    <EmbeddedNativeLibrary Include="Jars\x86\libnative_camera_r3.0.1.so" />
+    <EmbeddedNativeLibrary Include="Jars\x86\libnative_camera_r4.0.3.so" />
+    <EmbeddedNativeLibrary Include="Jars\x86\libnative_camera_r4.1.1.so" />
+    <EmbeddedNativeLibrary Include="Jars\x86\libnative_camera_r4.2.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\x86\libnative_camera_r4.3.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\x86\libnative_camera_r4.4.0.so" />
+    <EmbeddedNativeLibrary Include="Jars\x86\libopencv_info.so" />
+    <EmbeddedNativeLibrary Include="Jars\x86\libopencv_java.so" />
+  </ItemGroup>
+</Project>
